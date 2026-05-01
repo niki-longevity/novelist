@@ -9,51 +9,19 @@
 | **xuanhuan-planning** | 世界观构建、修炼体系设计、势力分布、人物设定、三层剧情规划（长期/中期/短期） | "写玄幻小说"、"开新书"、"设定世界观"、"修炼体系"、"剧情规划" |
 | **xuanhuan-writing** | 写前确认 → 逐批写 2-3 章 → 人工审阅 → 修正影响分析 → 循环 | "写正文"、"写第 X 章"、"继续写"、"推进剧情" |
 
-## 安装方式
+## 快速安装
 
-### 方式一：通过插件市场安装
+在 Claude Code 中依次执行两条命令：
 
-1. 打开 Claude Code，按 `Ctrl+S` 打开 `settings.json`
-
-2. 在 `extraKnownMarketplaces` 中加入：
-
-```json
-"novelist": {
-  "source": {
-    "source": "github",
-    "repo": "niki-longevity/novelist"
-  }
-}
+```
+/plugin marketplace add niki-longevity/novelist
 ```
 
-完整示例：
-
-```json
-{
-  "extraKnownMarketplaces": {
-    "novelist": {
-      "source": {
-        "source": "github",
-        "repo": "niki-longevity/novelist"
-      }
-    }
-  }
-}
+```
+/plugin install novelist@novelist
 ```
 
-3. 重启 Claude Code
-
-4. 执行 `/plugin`，在列表中找到 **novelist** 市场，安装 `novelist` 插件
-
-5. 执行 `/reload-plugins`，即可使用
-
-### 方式二：通过 CLI 直接安装
-
-```bash
-claude plugin install novelist@novelist
-```
-
-> 注意：依旧需要先在 `settings.json` 中配置 `extraKnownMarketplaces`。
+完毕。
 
 ## 使用方式
 
