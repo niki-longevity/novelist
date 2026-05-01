@@ -1,0 +1,24 @@
+{
+  "name": "novelist",
+  "id": "novelist",
+  "owner": {
+    "name": "niki-longevity"
+  },
+  "metadata": {
+    "description": "玄幻小说写作工具集 — 从世界观构建、剧情规划到正文写作的深度协作 workflow",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "novelist",
+      "source": "./",
+      "description": "玄幻小说写作工具集，包含两个 skill：xuanhuan-planning（世界观+剧情规划）和 xuanhuan-writing（正文写作）",
+      "version": "1.0.0",
+      "author": {
+        "name": "niki-longevity"
+      },
+      "keywords": ["玄幻", "小说", "写作", "xuanhuan", "novel", "网文"],
+      "category": "writing"
+    }
+  ]
+}
